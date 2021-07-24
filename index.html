@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles/styles1.css" id="styles1"> 
+  <link rel="stylesheet" href="styles/styles2.css" id="styles2" disabled>
+  <link rel="stylesheet" href="styles/styles3.css" id="styles3" disabled>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+ 
+</head>
+<body>
+  <div class="header">
+    <div class="logo">calc</div>
+    <div class="theme-div">
+      <div class="theme-label">THEME</div>
+      <div class="theme-slider-div">
+        <div class="slide-numbers">1 2 3</div>
+        <div class="slider-container">
+          <input type="range" class="slider" id="slider" name="slider" 
+             min="1" max="3" value="1" step="1">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="output-screen" id="output-screen">1000.0</div>
+  <div class="numberpad-div">
+    <div class="button-grid">
+      <button class="button" id="button-7" onclick="enterNumber('7')">7</button>
+      <button class="button" id="button-8" onclick="enterNumber('8')">8</button>
+      <button class="button" id="button-9" onclick="enterNumber('9')">9</button>  
+      <button class="del-button" id="button-del" onclick="deleteDigit()">DEL</button>
+      <button class="button" id="button-4" onclick="enterNumber('4')">4</button>
+      <button class="button" id="button-5" onclick="enterNumber('5')">5</button>  
+      <button class="button" id="button-6" onclick="enterNumber('6')">6</button>
+      <button class="button" id="button-add" onclick="add()">+</button>
+      <button class="button" id="button-1" onclick="enterNumber('1')">1</button> 
+      <button class="button" id="button-2" onclick="enterNumber('2')">2</button>
+      <button class="button" id="button-3" onclick="enterNumber('3')">3</button>
+      <button class="button" id="button-substract" onclick="substract()">-</button>
+      <button class="button" id="button-point" onclick="enterPoint()">.</button>
+      <button class="button" id="button-0" onclick="enterNumber('0')">0</button>
+      <button class="button" id="button-divide" onclick="divide()">/</button>
+      <button class="button" id="button-multiply" onclick="multiply()">x</button>
+      <div class="big-buttons-div">
+        <button class="reset-button id="button-reset" onclick="reset()">RESET</button>
+        <button class="result-button" id="button-result" onclick="result()">=</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
